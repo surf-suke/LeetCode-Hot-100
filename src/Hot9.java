@@ -14,9 +14,9 @@ public class Hot9 {
             pCount[p.charAt(i) - 'a']++;
             sCount[s.charAt(i) - 'a']++;
         }
-        //如果一开始频率相等说明一定s包含一个异位词p
+        //如果一开始频率相等说明一定s包含一个异位词p,初始窗口
         if (matches(pCount, sCount)) res.add(0);
-
+        //窗口移动
         for (int i = p.length(); i < s.length(); i++) {
             sCount[s.charAt(i) - 'a']++;
             sCount[s.charAt(i - p.length()) - 'a']--;
