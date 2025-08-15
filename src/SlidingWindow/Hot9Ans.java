@@ -1,8 +1,8 @@
-// src/Hot9.java
+package SlidingWindow;// src/SlidingWindow.Hot9.java
 import java.util.ArrayList;
 import java.util.List;
 
-public class Hot9 {
+public class Hot9Ans {
     public List<Integer> findAnagrams(String s, String p) {
         List<Integer> res = new ArrayList<>();       //答案
         if (s.length() < p.length()) return res;
@@ -34,7 +34,7 @@ public class Hot9 {
 
     public static void main(String[] args) {
         String s = "cbaebabacd", p = "abc";
-        List<Integer> list = new Hot9().findAnagrams(s, p);
+        List<Integer> list = new Hot9Ans().findAnagrams(s, p);
         for (Integer x : list) {
             System.out.print(x + " ");
         }

@@ -1,5 +1,7 @@
+package CommonArray;
+
 // src/Hot11.java
-public class Hot11 {
+public class Hot15Ans {
     //三次数组翻转法
     public void rotate(int[] nums, int k) {
         int n = nums.length;
@@ -21,7 +23,7 @@ public class Hot11 {
     public static void main(String[] args){
         int[] nums = {-1, -100, 3, 99};
         int k = 2;
-        new Hot11().rotate(nums, k);
+        new Hot15Ans().rotate(nums, k);
         for (int x : nums) {
             System.out.print(x + " ");
         }

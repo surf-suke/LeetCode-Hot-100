@@ -1,7 +1,9 @@
+package SlidingWindow;
+
 import java.util.HashMap;
 import java.util.Map;
 
-public class Hot8 { //无重复字符最长字串长度
+public class Hot8Ans { //无重复字符最长字串长度
     //定义滑动窗口状态为是否有重复子串，如有则左边界右移直到没有重复子串，反之，右边界右移直到有重复子串
     //使用HashMap记录字符和索引位置，若有重复字符则更新左边界为重复字符的下一个位置
     //时间复杂度O(n)，空间复杂度O(min(n,m))，其中n为字符串长度，m为字符集大小
@@ -29,7 +31,7 @@ public class Hot8 { //无重复字符最长字串长度
     }
     public static void main(String[] args){
         String s = "pwwkew";
-        System.out.println(new Hot8().lengthOfLongestSubstring(s));
+        System.out.println(new Hot8Ans().lengthOfLongestSubstring(s));
     }
 
 }

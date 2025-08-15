@@ -1,7 +1,7 @@
-// src/Hot10.java
+package SubString;// src/SubString.Hot10.java
 import java.util.HashMap;
 
-public class Hot10 {
+public class Hot10Ans {
     //前缀和+哈希表
     //preSum[i]=∑i ==> preSum[i]=preSum[i-1]+nums[i]
     //故有 [j...i] 的和为 k 的条件是 preSum[i] - preSum[j-1] = k
@@ -26,7 +26,7 @@ public class Hot10 {
     public static void main(String[] args){
         int[] nums = {1,2,3};
         int k = 3;
-        int count = new Hot10().subarraySum(nums, k);
+        int count = new Hot10Ans().subarraySum(nums, k);
         System.out.println(count); // 输出2
     }
 }
