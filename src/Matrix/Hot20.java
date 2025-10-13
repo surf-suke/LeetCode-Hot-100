@@ -7,7 +7,7 @@ public class Hot20 {
         if(row!=col)
             return;
         horizontalFlip(matrix);
-        antidiagonalFlip(matrix);
+        diagonalFlip(matrix);
     }
     public void horizontalFlip(int[][] matrix){
         int row= matrix.length;
@@ -20,7 +20,7 @@ public class Hot20 {
             }
         }
     }
-    public void antidiagonalFlip(int[][] matrix){
+    public void diagonalFlip(int[][] matrix){
         int row=matrix.length;
         int col=matrix[0].length;
         for(int i=0;i<row;i++){
