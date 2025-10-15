@@ -25,5 +25,4 @@ public class Hot25 {
         }
         return false;
     }
-
 }
