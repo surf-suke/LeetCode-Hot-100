@@ -2,6 +2,7 @@ package LinkedList;
 
 import java.util.HashMap;
 import java.util.Map;
+// Hot36
 public class LRUCache {    //LRU缓存
     public int capacity;
     public int size;
